@@ -1,0 +1,11 @@
+command: ['streamlit', 'run', 'app.py']
+
+env:
+  - name: 'DATABRICKS_WAREHOUSE_ID'
+    valueFrom: 'sql_warehouse'
+  - name: 'STREAMLIT_GATHER_USAGE_STATS'
+    value: 'false'
+  - name: 'CATALOG'
+    value: 'workspace'
+  - name: 'SCHEMA'
+    value: 'default'
